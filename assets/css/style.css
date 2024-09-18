@@ -143,7 +143,7 @@ header .search{
 .search .search-box {
   display: grid;
   grid-template-columns: auto 200px 200px 250px;
-
+  align-items: center;
   border-radius: 35px;
   width: 50%;
   font-size: 12px;
@@ -153,6 +153,7 @@ header .search{
 .search-box > div {
   padding: 12px 24px;
 }
+
 
 .search-box > div:hover {
   background-color: #EBEBEB;
@@ -176,12 +177,12 @@ header .search{
 
 .who {
   display: grid;
-  grid-template-columns: 80% auto;
+  grid-template-columns: 87% auto;
 }
 
 .who .search-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   color: #fff;
   background-color: #ff385c;
@@ -193,8 +194,8 @@ header .search{
   font-size: 20px;
   text-align: center;
   position: absolute;
-  top: 16px;
-  left: 14px;
+  top: 26%;
+  left: 22%;
 }
 
 /* Filter */
