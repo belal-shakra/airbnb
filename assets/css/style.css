@@ -1,0 +1,303 @@
+:root{
+  --secondary: gray;
+  --hover: #F7F7F7;
+  --site-width: 98%;
+}
+
+/*----------- Gerneral -------------*/
+
+* {
+  font-family: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 2.986rem;
+}
+
+h2 {
+  font-size: 2.488rem;
+}
+
+h3 {
+  font-size: 2.074rem;
+}
+
+h4 {
+  font-size: 1.728rem;
+}
+
+h5 {
+  font-size: 1.44rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+i {
+  color: var(--secondary);
+}
+
+/*----------- Header -------------*/
+/* nav */
+header {
+  width: var(--site-width);
+  margin: auto;
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 99;
+  background-color: #fff;
+}
+
+header .nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:  40px;
+  padding-right:  40px;
+}
+
+header .nav .logo img{
+  width: 150px;
+  height: 100px;
+}
+
+header .nav .nav-items{
+  list-style-type: none;
+}
+
+header .nav .nav-items .nav-link {
+  display: inline-block;
+  padding: 8px;
+}
+
+.active {
+  font-weight: bold;
+}
+.dtls {
+  display: flex;
+}
+
+.dtls > div {
+  padding: 10px;
+  border-radius: 24px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.dtls div:hover{
+  background-color: var(--hover);
+}
+
+.dtls .dropdown-menu {
+  display: flex;
+  border: 1px solid #000;
+}
+
+.dtls .dropdown-menu:hover {
+  box-shadow: 0px 2px 3px  var(--secondary);
+}
+
+.dtls .dropdown-menu div {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.dtls .dropdown-menu div .user {
+  font-size: 20px;
+}
+
+/* search */
+header .search{
+  display: flex;
+  justify-content: center;
+}
+
+.search .search-box {
+  display: grid;
+  grid-template-columns: auto 200px 200px 250px;
+
+  border: 1px solid var(--secondary);
+  border-radius: 30px;
+  width: 50%;
+  font-size: 14px;
+  box-shadow: 1px 1px 5px 1px #e4e4e4;
+}
+
+.search-box > div {
+  padding: 12px 16px;
+}
+
+.search-box > div:hover {
+  background-color: #EBEBEB;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.search-box > div .title {
+  font-weight: bold;
+}
+
+.search-box > div .txt {
+  font-weight: lighter;
+}
+
+.search-box > div > span{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Filter */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-top: 1px solid #e7e6e6;
+  padding-top: 10px;
+}
+
+.filter .filter-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 12px 12px 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.filter .filter-item:hover{
+  cursor: pointer;
+}
+.filter .filter-item span{
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  color: var(--secondary);
+  padding-bottom: 8px;
+}
+.filter .filter-item span.active{
+  color: #000;
+  width: fit-content;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.filter .filter-item:hover span{
+  color: #000;
+  width: fit-content;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.filter .filter-item img{
+  width: 26px;
+  margin: auto;
+}
+
+.filter .control  {
+  margin:  0px;
+  padding:  0px;
+}
+
+.filter .control i {
+  font-size: 20px;
+  background-color: #fff;
+  border: 1px solid var(--secondary);
+  border-radius: 50%;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  box-shadow: 1px 0px 1px var(--secondary);
+}
+
+.filter .control i:hover {
+  box-shadow: 2px 2px 3px var(--secondary);
+}
+
+/*----------- Main -------------*/
+main {
+  margin: 10px auto;
+  width: var(--site-width);
+  padding: 1px 50px;
+}
+
+
+
+
+/*----------- Room -------------*/
+
+.rooms div .cards-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: space-around;
+}
+
+.card .card-body {
+  padding: 6px;
+}
+
+.card .card-body .card-img {
+  position: relative;
+}
+
+.card .card-body .card-img i {
+  position: absolute;
+  left: 14.3rem;
+  top: 12px;
+  opacity: 75%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.5;
+}
+
+.card .card-body .card-img i:hover {
+  opacity: 100%;
+}
+
+.card .card-body .card-img img {
+  width: 280px;
+  height: 255px;
+  border-radius: 12px;
+}
+
+.card .card-body .card-text p {
+  margin: 0px;
+}
+
+.card .card-body .card-text p.desc {
+  color: var(--secondary);
+}
+
+.past-experiences {
+  margin-top: 40px;
+}
+
+.past-experiences .title {
+  margin-left: 16px;
+}
