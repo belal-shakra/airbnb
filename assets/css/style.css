@@ -144,15 +144,14 @@ header .search{
   display: grid;
   grid-template-columns: auto 200px 200px 250px;
 
-  border: 1px solid var(--secondary);
   border-radius: 30px;
   width: 50%;
-  font-size: 14px;
-  box-shadow: 1px 1px 5px 1px #e4e4e4;
+  font-size: 12px;
+  box-shadow: 1px 1px 5px 2px #e4e4e4;
 }
 
 .search-box > div {
-  padding: 12px 16px;
+  padding: 12px 24px;
 }
 
 .search-box > div:hover {
@@ -167,6 +166,7 @@ header .search{
 
 .search-box > div .txt {
   font-weight: lighter;
+  color: var(--secondary);
 }
 
 .search-box > div > span{
